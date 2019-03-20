@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="GYXUC1uux2I8rAOPFQdYiY2xjSN6dNv5Hjdyi9xa">
+    <title>FayaMedia</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet">
+    <!-- <link rel="shortcut" href="http://fayamedia.com/dist/img/faya_logo.png"> -->
+    <link rel="icon" type="image/png" sizes="132x32" href="http://fayamedia.com/dist/img/faya_logo.png">
+    <link id="gull-theme" rel="stylesheet" href="./css/lite-cyan.min.css">
+    <link rel="stylesheet" href="./css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="./vendor/pickadate/classic.css">
+    <link rel="stylesheet" href="./vendor/pickadate/classic.date.css">
+    <link rel="stylesheet" href="./css/multirange.css">
+    <style>
+        .sidebar-light-cyan {
+            background: #1BA1A1;
+        }
+        .i-Add-User {
+            color: red;
+
+        }
+    </style>
+ </head>
+
+<body class="text-left">
+    
+  <!-- ============ Compact Layout start ============= -->
+        
+    <div class="app-admin-wrap layout-sidebar-compact sidebar-light-cyan sidenav-open clearfix">
+        <div class="side-content-wrap">
+            <div class="sidebar-left open rtl-ps-none" data-perfect-scrollbar data-suppress-scroll-x="true">
+                <ul class="navigation-left">
+                    <li class="nav-item  active" data-item="dashboard">
+                        <a class="nav-item-hold" href="#">
+                            <i class="nav-icon i-Bar-Chart"></i>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+
+                    <li class="nav-item " data-item="forms">
+                        <a class="nav-item-hold" href="dashboard1.html#">
+                            <i class="nav-icon i-File-Clipboard-File--Text"></i>
+                            <span class="nav-text">Planning</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hold" href="http://demos.ui-lib.com/gull-html-doc/" target="_blank">
+                            <i class="nav-icon i-Safe-Box1"></i>
+                            <span class="nav-text">Doc</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-left-secondary rtl-ps-none" data-perfect-scrollbar data-suppress-scroll-x="true">
+                <i class="sidebar-close i-Close" (click)="toggelSidebar()"></i>
+            <header>
+                <div class="logo">
+                    <!-- <img src="../../assets/images/logo-text.png" alt=""> -->
+                    <img src="http://fayamedia.com/dist/img/faya_logo.png" alt="">
+                </div>
+            </header>
+            <!-- Submenu Dashboards -->
+            <div class="submenu-area" data-parent="dashboard">
+                <header>
+                    <h6>Dashboard</h6>
+                    <p>Project overview</p>
+                </header>
+                <ul class="childNav" data-parent="dashboard">
+                    <li class="nav-item active">
+                        <a class="active" href="home.html">
+                            <i class="nav-icon i-Clock-3"></i>
+                            <span class="item-name">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="active" href="dashboard1.html">
+                            <i class="nav-icon i-Clock-4"></i>
+                            <span class="item-name">Overview</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="submenu-area" data-parent="forms">
+                <header>
+                    <h6>Planning</h6>
+                    <p>Create and Manage plans</p>
+                </header>
+                <ul class="childNav" data-parent="forms">
+                    <li class="nav-item">
+                        <a class="" href="newplan.html">
+                            <i class="nav-icon i-File-Clipboard-Text--Image"></i>
+                            <span class="item-name">New Plan</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" href="#">
+                            <i class="nav-icon i-Split-Vertical"></i>
+                            <span class="item-name">Manage Plans</span>
+                        </a>
+                    </li>
+                </ul>
+           </div>
+           
+        </div>
+        <div class="sidebar-overlay"></div>
+    </div>
+    <!--=============== Left side End ================-->
+       
+
+
+    <!-- ============ Body content start ============= -->
+    <div class="main-content-wrap d-flex flex-column">
+        <div class="main-header">
+            <div class="logo">
+                <img src="../../assets/images/logo.png" alt="">
+            </div>
+
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div style="margin: auto"></div>
+
+            <div class="header-part-right">
+                <!-- Full screen toggle -->
+                <!-- <i class="i-Full-Screen header-icon d-none d-sm-inline-block" data-fullscreen></i> -->
+
+                <!-- Notificaiton -->
+                <div class="dropdown">
+                    <div class="badge-top-container" role="button" id="dropdownNotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge badge-primary">3</span>
+                        <i class="i-Bell text-muted header-icon"></i>
+                    </div>
+                    <!-- Notification dropdown -->
+                    <div class="dropdown-menu dropdown-menu-right notification-dropdown rtl-ps-none" aria-labelledby="dropdownNotification" data-perfect-scrollbar data-suppress-scroll-x="true">
+
+                        <div class="dropdown-item d-flex">
+                            <div class="notification-icon">
+                                <i class="i-Receipt-3 text-success mr-1"></i>
+                            </div>
+                            <div class="notification-details flex-grow-1">
+                                <p class="m-0 d-flex align-items-center">
+                                    <span>New view</span>
+                                    <span class="badge badge-pill badge-success ml-1 mr-1">new</span>
+                                    <span class="flex-grow-1"></span>
+                                    <span class="text-small text-muted ml-auto">2 hours ago</span>
+                                </p>
+                                <p class="text-small text-muted m-0">New Campaign views</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-item d-flex">
+                            <div class="notification-icon">
+                                <i class="i-Empty-Box text-danger mr-1"></i>
+                            </div>
+                            <div class="notification-details flex-grow-1">
+                                <p class="m-0 d-flex align-items-center">
+                                    <span>Campaign Sesssion</span>
+                                    <span class="badge badge-pill badge-danger ml-1 mr-1">3</span>
+                                    <span class="flex-grow-1"></span>
+                                    <span class="text-small text-muted ml-auto">10 hours ago</span>
+                                </p>
+                                <p class="text-small text-muted m-0">Campaign Ended</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Notificaiton End -->
+
+                <!-- User avatar dropdown -->
+                <div class="dropdown">
+                    <div  class="user col align-self-end">
+                        <img src="https://redbanksmilesnj.com/wp-content/uploads/2015/11/avatar-placeholder-320x320.png" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <div class="dropdown-header">
+                                <i class="i-Lock-User mr-1"></i> Timothy Carlson
+                            </div>
+                            <a class="dropdown-item">Account settings</a>
+                            <a class="dropdown-item">Billing history</a>
+                            <a class="dropdown-item" href="../../sessions/signIn.html">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- header top menu end -->
+      
+        <div class="main-content">
+            <div class="breadcrumb">
+                <h1>Planning</h1>
+            </div>
+
+            <div class="separator-breadcrumb border-top"></div>
+
+            <div class="row">
+
+
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <!-- <div class="card-title mb-3">Form Inputs</div> -->
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-3 col-lg-3 col-sm-12 form-group mb-3">
+                                        <label for="picker1">TIME PERIOD</label>
+                                        <select class="form-control">
+                                            <option>April 2019</option>
+                                            <option>May 2019</option>
+                                            <option>June 2019</option>
+                                            <option>July 2019</option>
+                                            <option>August 2019</option>
+                                            <option>September 2019</option>
+                                            <option>October 2019</option>
+                                            <option>November 2019</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-4 form-group mb-3" style="float: right">
+                                        <label>DATABASE</label>
+                                        <label class="radio radio-primary">
+                                            <input type="radio" name="radio" [value]="1" formcontrolname="radio">
+                                            <span>MPS</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio radio-primary">
+                                            <input type="radio" name="radio" [value]="1" formcontrolname="radio">
+                                            <span>GEOPOL</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="picker1">CLIENTS</label>
+                                        <select class="form-control">
+                                            <option>Client 1</option>
+                                            <option>Client 2</option>
+                                            <option>Client 3</option>
+                                            <option>Client 4</option>
+                                            <option>Client 5</option>
+                                            <option>Client 6</option>
+                                        </select>
+                                        <small id="emailHelp" class="form-text text-muted">Select client</small>
+                                    </div>
+
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="picker1">BRAND</label>
+                                        <select class="form-control">
+                                            <option>Brand 1</option>
+                                            <option>Brand 2</option>
+                                            <option>Brand 3</option>
+                                            <option>Brand 4</option>
+                                            <option>Brand 5</option>
+                                            <option>Brand 6</option>
+                                        </select>
+                                        <small id="emailHelp" class="form-text text-muted">Select Brand</small>
+                                    </div>
+
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="exampleInputEmail1">PRODUCT</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Type in product">
+                                        <small id="emailHelp" class="form-text text-muted">Type in product name</small>
+                                    </div>
+
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="exampleInputEmail1">CAMPAIGN NAME</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Type campaign name">
+                                    </div>
+
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="picker3">START DATE</label>
+                                        <div class="input-group">
+                                            <input id="picker3" class="form-control" placeholder="yyyy-mm-dd" name="dp" >
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary"  type="button">
+                                                    <i class="icon-regular i-Calendar-4"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="picker3">END DATE</label>
+                                        <div class="input-group">
+                                            <input id="picker3" class="form-control" placeholder="yyyy-mm-dd" name="dp" >
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary"  type="button">
+                                                    <i class="icon-regular i-Calendar-4"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- People -->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h3>People</h3>
+                                            </div>
+                                            <ol>
+                                                <li>
+                                                    <div class="col-md-6 form-group mb-3">
+                                                        <div class="input-group">
+                                                            <input type="range" multiple value="0,100" />
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-6 form-group mb-3">
+                                                        <div class="input-group">
+                                                            <input type="range" multiple value="0,100" />
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-primary m-1">
+                                        Add more</button>
+                                    </div>
+                                    <div class="col-md-12">
+                                         <button class="btn btn-primary">Add</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+            <!-- Footer Start -->
+            <div class="flex-grow-1"></div>
+            <div class="app-footer">
+
+            </div>
+            <!-- fotter end -->
+        </div>
+        <!-- ============ Body content End ============= -->
+    </div>
+    <!--=============== End app-admin-wrap ================-->
+
+
+   <!-- ============ Compact Layout End ============= -->
+
+    <!-- ============ Horizontal Layout start ============= -->
+
+
+    <script src="./assets/js/common-bundle-script.js"></script>
+    <script src="./js/multirange.js"></script>
+    <script src="./assets/js/vendor/pickadate/picker.js"></script>
+    <script src="./assets/js/vendor/pickadate/picker.date.js"></script>
+    <!-- <script src="../../assets/js/es5/dashboard.v1.script.js"></script> -->
+    <script src="./assets/js/form.basic.script.js"></script>
+    <script src="./assets/js/es5/script.min.js"></script>
+    <script src="./assets/js/es5/sidebar.compact.script.min.js"></script>
+    <script src="./assets/js/es5/customizer.script.min.js"></script>
+    </body>
+
+</html>
