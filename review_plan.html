@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>FAYA.</title>
+      <meta property="og:url" content="http://www.faya.com" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="FAYA" />
+      <meta property="og:description" content="Advertising" />
+      
+      <!-- Materialize -->
+      <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.4/nouislider.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="css/reset.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/vendor/materialize.min.css" rel="stylesheet">
+
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <style>
+      .card-panel {
+        border: 1px solid #e8e8e8;
+      }
+      .left-img {
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+      .divider {
+        color: #ccc;
+        background: #ccc;
+        border: 1px solid #ccc;
+        height: 0px;
+      }
+      .found-card {
+        max-height: 120px;
+        min-height: 120px;
+      }
+      .gross-card {
+        max-height: 100px;
+        min-height: 100px;
+      }
+      .naira {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- side navigation -->
+    <div class="side_nav">
+      <div class="logo mb4">
+        <img src="img/logo.svg">
+      </div>
+
+
+      <div class="_nav">
+        <ul>
+          <li class="home_icon"><a href="index.html">Home</a></li>
+
+          <span class="small_faint">Financials</span>
+          <li class="active clients_icon"><a href="planning.html">Planning</a></li>
+          <li class="invoice_icon"><a href="">Compare</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- main container -->
+    <div class="main_contain">
+      <!-- header -->
+      <div class="header mb3 clearfix">
+        <div class="col_4 header_search column">
+          <form>
+            <input type="text" placeholder="Search...">
+          </form>
+        </div>
+
+        <div class="user_dets p-t col_8 column align_right">
+
+          <div class="user_acct right align_left">
+            <span class="avatar_icon"></span>
+
+            <div class="inner_nav">
+              <p class="border_bottom">
+                <span class="weight_bold block_disp eliptic">Larry Oti</span>
+                <span class="block_disp small_faint">BETA Agency</span>
+              </p>
+
+              <div class="">
+                <a href="" class="color_dark">Profile</a>
+                <a href="" class="color_dark">Settings</a>
+                <a href="" class="color_red">Logout</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <span class="notif_icon"><span>3</span></span>
+          <p class="right padd">Sample Agency</p>
+
+        </div>
+      </div>
+
+      <!-- subheader -->
+      <div class="sub_header clearfix mb pt">
+        <div class="column col_6">
+          <h2 class="sub_header">Plan Summary</h2>
+        </div>
+      </div>
+      
+
+      <!-- frame one -->
+      <div class="the_frame clearfix mb ">
+        <div class="filters clearfix row">
+          <div class="column col_3 clearfix">
+            <h4 class="small_faint weight_medium">Time Period</h4>
+            <div class="">
+              <div class="select_wrap">
+                <select disabled="true">
+                  <option>January 2019</option>
+                  <option>February 2019</option>
+                  <option>March 2019</option>
+                  <option>April 2019</option>
+                  <option>May 2019</option>
+                  <option>June 2019</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="column col_9">
+            <div class="clearfix">
+              <div class="column col_6 details_wrap">
+                <label class="small_faint">Brand</label>
+                <input type="text" placeholder="" value="PEPSI" disabled="true">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end frame -->
+    
+      <!-- frame two -->
+      <div class="the_frame mb client_charts">
+        <!-- Filter -->
+        <div class="filters chart_filters border_bottom clearfix">
+          <div class="column col_10 date_filter">
+            Planning Criteria
+            <label>
+              <input class="with-gap" name="group3" type="radio" checked />
+              <span>Budget</span>
+            </label>
+            <label>
+              <input class="with-gap" name="group3" type="radio" checked />
+              <span>Reach</span>
+            </label>
+          </div>
+
+          <div class="column col_2 m-b">
+            <button class="table-btn" style="float: right">Edit</button>
+          </div>
+        </div>
+        <!-- / filter -->
+
+        <div class="the_stats clearfix mb border_bottom mb">
+          <div class="active_fill column col_4">
+            <span class="small_faint uppercased weight_medium">Budget</span>
+            <h3>₦ 1,700,000</h3>
+          </div>
+
+          <div class="column col_4">
+            <span class="small_faint uppercased weight_medium">Reach</span>
+            <h3>12,000,000</h3>
+          </div>
+
+          <div class="column col_4">
+            <span class="small_faint uppercased weight_medium">Region</span>
+            <h3>NE, NW, SE</h3>
+
+            <a href="" class="weight_medium small_font view_brands">View Brands</a>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="the_stats clearfix mb border_bottom mb">
+          <div class="active_fill column col_4">
+            <span class="small_faint uppercased weight_medium">Gender</span>
+            <h3>Male & Female</h3>
+          </div>
+
+          <div class="column col_4">
+            <span class="small_faint uppercased weight_medium">Ages</span>
+            <div class="chip">13yrs - 24yrs</div>
+            <div class="chip">13yrs - 24yrs</div>
+          </div>
+
+          <div class="column col_4">
+            <span class="small_faint uppercased weight_medium">Campaign Duration</span>
+            <div class="chip">10/04/19 - 13/07/19</div>
+            <h3></h3>
+          </div>
+        </div>
+
+        <div class="row mt4">
+          <div class="column col_4">
+            <div class="row">
+              <div class="column col_4 m4">
+                <img class="left-img" src="img/tv.svg">
+              </div>
+              <div class="column col_8">
+                <div class="card-panel light z-depth-0">
+                  <span class="teal-text"></span>
+                  <ul>
+                    <li class="pie_legend active">
+                      <span class="weight_medium right">3</span> 39sec
+                    </li>
+                    <li class="pie_legend pending">
+                      <span class="weight_medium right">7</span> 20sec
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column col_4">
+            <div class="row">
+              <div class="column col_4 m4">
+                <img class="left-img" src="img/radio.svg">
+              </div>
+              <div class="column col_8">
+                <div class="card-panel light z-depth-0">
+                  <span class="teal-text"></span>
+                  <ul>
+                    <li class="pie_legend active">
+                      <span class="weight_medium right">3</span> 39sec
+                    </li>
+                    <li class="pie_legend pending">
+                      <span class="weight_medium right">7</span> 20sec
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column col_4 mt1">
+            <div class="clearfix">
+              <div class="column col_6 details_wrap" style="width: 100%">
+                <label class="small_faint">LSM</label>
+                <input type="text" placeholder="" value="A" disabled="true">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+        <div class="mt4">
+          <h2 class="container grey-text lighten-1">FAYA found...</h2>
+          
+          <!-- start found -->
+          <div class="row mt4 container">
+            <div class="column col_4">
+              <div class="card-panel light z-depth-0 found-card">
+                <div class="row">
+                  <div class="column col_4">
+                    <img class="left-img" src="img/tv.svg">
+                  </div>
+                  <div class="column col_8">
+                    <small>Total Number of TV programs</small>
+                    <h3 class="right">170</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col_4">
+              <div class="card-panel light z-depth-0 found-card">
+                <div class="row">
+                  <div class="column col_4">
+                    <img class="left-img" src="img/radio.svg">
+                  </div>
+                  <div class="column col_8">
+                    <small>Total Number of radio programs</small>
+                    <h3 class="right">580</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col_4">
+              <div class="card-panel light z-depth-0 found-card">
+                <div class="row">
+                  <div class="column col_4">
+                    <img class="left-img" src="img/ooh.svg">
+                  </div>
+                  <div class="column col_8">
+                    <small>Total Number of spots</small>
+                    <h3 class="right">180</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end found -->
+          
+          <!-- Begin Gross -->
+          <div class="row mt4 container">
+            <div class="column col_4">
+              <div class="card-panel light z-depth-0 gross-card">
+                <div class="row">
+                  <div class="column col_4">
+                    <h2 class="naira">₦</h2>
+                  </div>
+                  <div class="column col_8">
+                    <small>Gross Media Cost</small>
+                    <h2 class="">170</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col_4">
+              <div class="card-panel light z-depth-0 gross-card">
+                <div class="row">
+                  <div class="column col_4">
+                    <h2 class="naira">₦</h2>
+                  </div>
+                  <div class="column col_8">
+                    <small>Net Media Cost</small>
+                    <h2 class="">580</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / col -->
+            <div class="column col_4">
+              <div class="card-panel light z-depth-0 gross-card">
+                <div class="row">
+                  <div class="column col_4">
+                    <h2 class="naira">₦</h2>
+                  </div>
+                  <div class="column col_8">
+                    <small>Savings</small>
+                    <h2 class="">180</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / col -->
+          </div>
+          <!-- / row -->
+        </div>
+
+        <!-- tv table -->
+        <div class="the_frame client_dets mb4 container">
+
+          <div class="filters border_bottom clearfix">
+            <div class="column col_8 p-t">
+              <p class="uppercased weight_medium">TV</p>
+            </div>
+          </div>
+
+          <!-- campaigns table -->
+          <table>
+            <tbody>
+              <tr>
+                <th>Stations</th>
+                <th>Total Audience</th>
+                <th>Region</th>
+                <th>Number of Spots</th>
+                <th>Material Duration</th>
+              </tr>
+
+              <tr>
+                <td>NTA 2</td>
+                <td>432000</td>
+                <td>NW NE</td>
+                <td>130</td>
+                <td>
+                  <span class="span_state status_pending">15</span>
+                  <span class="span_state status_pending">30</span>
+                  <span class="span_state status_pending">35</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>NTA 2</td>
+                <td>432000</td>
+                <td>NW NE</td>
+                <td>130</td>
+                <td>
+                  <span class="span_state status_pending">15</span>
+                  <span class="span_state status_pending">30</span>
+                  <span class="span_state status_pending">35</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>NTA 2</td>
+                <td>432000</td>
+                <td>NW NE</td>
+                <td>130</td>
+                <td>
+                  <span class="span_state status_pending">15</span>
+                  <span class="span_state status_pending">30</span>
+                  <span class="span_state status_pending">35</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>NTA 2</td>
+                <td>432000</td>
+                <td>NW NE</td>
+                <td>130</td>
+                <td>
+                  <span class="span_state status_pending">15</span>
+                  <span class="span_state status_pending">30</span>
+                  <span class="span_state status_pending">35</span>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <!-- end -->
+        </div>
+        <!-- / the_frame -->
+
+        <!-- radion table -->
+        <div class="the_frame client_dets mt4 container" style="margin-top: 50px">
+
+          <div class="filters border_bottom clearfix">
+            <div class="column col_8 p-t">
+              <p class="uppercased weight_medium">RADIO</p>
+            </div>
+          </div>
+
+          <!-- campaigns table -->
+          <table>
+            <tbody>
+              <tr>
+                <th>Stations</th>
+                <th>Total Audience</th>
+                <th>Region</th>
+                <th>Number of Spots</th>
+                <th>Material Duration</th>
+              </tr>
+
+              <tr>
+                <td>NTA 2</td>
+                <td>432000</td>
+                <td>NW NE</td>
+                <td>130</td>
+                <td>
+                  <span class="span_state status_pending">15</span>
+                  <span class="span_state status_pending">30</span>
+                  <span class="span_state status_pending">35</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>NTA 2</td>
+                <td>432000</td>
+                <td>NW NE</td>
+                <td>130</td>
+                <td>
+                  <span class="span_state status_pending">15</span>
+                  <span class="span_state status_pending">30</span>
+                  <span class="span_state status_pending">35</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>NTA 2</td>
+                <td>432000</td>
+                <td>NW NE</td>
+                <td>130</td>
+                <td>
+                  <span class="span_state status_pending">15</span>
+                  <span class="span_state status_pending">30</span>
+                  <span class="span_state status_pending">35</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>NTA 2</td>
+                <td>432000</td>
+                <td>NW NE</td>
+                <td>130</td>
+                <td>
+                  <span class="span_state status_pending">15</span>
+                  <span class="span_state status_pending">30</span>
+                  <span class="span_state status_pending">35</span>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <!-- end -->
+        </div>
+        <!-- / radion the_frame -->
+
+
+        <div class="mb4 align_right pt">
+          <input type="submit" value="Customize Plan" class="btn uppercased mb4">
+          <input type="submit" value="Print" class="btn uppercased mb4">
+          <input type="submit" value="Export" class="btn uppercased mb4">
+        </div>
+      </div>
+      <!-- end frame -->
+
+    </div>
+
+
+  </div>
+
+
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.4/nouislider.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.1.0/wNumb.min.js"></script>
+    <!-- <script type="text/javascript" src="js/modal.js"></script> -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+
+      // date picker
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.datepicker');
+        var instances = M.Datepicker.init(elems);
+      });
+      // select dropdown
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+      });
+      // add range
+      function addRange() {
+        console.log('adding range..');
+        $("#range-collection").append(`
+          <li class="collection-item">
+            <form action="#">
+              <p class="range-field">
+                <input type="range" id="test5" min="0" max="100" />
+              </p>
+            </form>
+          </li>
+        `);
+      }
+      var radioBoxDisplay = false;
+      var tvBoxDisplay = false;
+      // show Tv box
+      function showTvBox() {
+        if (tvBoxDisplay) {
+          tvBoxDisplay = false;
+          $('.tv-box').hide();
+          $('.tv-box').css('display', 'none');
+        }
+        if (!tvBoxDisplay) {
+          $('.tv-box').show();
+          $('.tv-box').css('display', 'block');
+          tvBoxDisplay = true;
+        }
+      }
+      // show Radio box
+      function showRadioBox() {
+        $('.radio-box').show();
+      }
+    </script>
+  </body>
+
+</html>
