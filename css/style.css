@@ -1063,6 +1063,11 @@ h2.sub_header {
 	color: #FFF;
 }
 
+.flat-input {
+	border: 0 !important;
+	border-bottom: 1px solid grey !important;
+}
+
 @media only screen and (max-width: 768px) {
 
 
