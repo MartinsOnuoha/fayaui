@@ -1069,6 +1069,14 @@ h2.sub_header {
 	color: #FFF;
 }
 
+.red-btn {
+  background-color: #F44336 !important;
+  color: #fff;
+}
+.red-btn:hover {
+  background-color: #FFF !important;
+  color: #F44336;
+}
 .flat-input {
 	border: 0 !important;
 	border-bottom: 1px solid grey !important;
