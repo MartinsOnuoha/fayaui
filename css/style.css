@@ -541,7 +541,7 @@ h2.sub_header {
 }
 
 .filters {
-	padding: 15px 30px 10px;
+	padding: 15px 30px 10px !important;
 }
 
 .chart_filters {
@@ -1052,15 +1052,16 @@ h2.sub_header {
 
 /* CUSTOM */
 .table-btn {
-	padding: 8px;
+	font-size: 12px !important;
+	padding: 8px !important;
 	background-color: #FFFFFF !important;
 	background: #FFF !important;
-	border: 0;
-	padding-left: 15px;
-	padding-right: 15px;
-	border-radius: 2px;
-	box-shadow: 0 0 1px 0 rgba(0,0,0,0.14), 0 2px 2px 0 rgba(0,0,0,0.12);
-	transition: 0.5s;
+	border: 0 !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	border-radius: 2px !important;
+	box-shadow: 0 0 1px 0 rgba(0,0,0,0.14), 0 2px 2px 0 rgba(0,0,0,0.12) !important;
+	transition: 0.5s !important;
 }
 .table-btn:hover {
 	cursor: pointer;
