@@ -3,9 +3,23 @@ $(function () {
 
 
 	// tabs
-	$('.tab_content').hide(); 
+	$('.tab_content').hide();
 	$('.tab_content:first').show(); //show first tab
 	$('.tab_header a:first-child').addClass('active'); //make first nav link active
+
+    $('.tab_content_modal').hide();
+    $('.tab_content_modal:first').show();
+    $('.tab_header_modal a:first-child').addClass('active');
+
+    // modal tab controller
+    $('.tab_header_modal a').click(function() {
+        var $this = $(this).attr('href');
+        $('.tab_content_modal').hide();
+        $($this).fadeIn(1000);
+
+        $('.tab_header_modal a').removeClass('active');
+        $($this).addClass('active');
+    })
 
 	$('.tab_header a').click(function() {
 		var $this = $(this).attr('href');
