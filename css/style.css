@@ -339,6 +339,19 @@ h2.sub_header {
 	font-size: 14px;
 }
 
+.tab_header_details a {
+	padding: 15px 30px;
+	color: inherit;
+	font-weight: 500;
+	display: inline-block;
+	border-right: 1px solid #e8e8e8;
+	text-transform: uppercase;
+	display: block;
+	float: left;
+	margin-bottom: -2px;
+	font-size: 14px;
+}
+
 .tab_header_2 a {
 	padding: 15px 30px;
 	color: inherit;
@@ -366,6 +379,12 @@ h2.sub_header {
 	color: #fff;
 	background: #00C4CA;
 }
+
+.tab_header_details a.active {
+	color: #fff;
+	background: #00C4CA;
+}
+
 .tab_header_3 a.active {
 	color: #fff;
 	background: #00C4CA;
@@ -378,7 +397,12 @@ h2.sub_header {
 .tab_content_modal {
 	min-height: 350px;
 }
+
 .tab_content_2 {
+	min-height: 350px;
+}
+
+.tab_content_details {
 	min-height: 350px;
 }
 

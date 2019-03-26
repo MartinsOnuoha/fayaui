@@ -11,6 +11,9 @@ $(function () {
     $('.tab_content_2:first').show();
     $('.tab_header_2 a:first-child').addClass('active');
 
+    $('.tab_content_details').hide();
+    $('.tab_content_details:first').show();
+    $('.tab_header_details a:first-child').addClass('active');
 
     $('.tab_content_modal').hide();
     $('.tab_content_modal:first').show();
@@ -23,6 +26,16 @@ $(function () {
         $($this).fadeIn(1000);
 
         $('.tab_header_2 a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // details tab controller
+    $('.tab_header_details a').click(function() {
+        var $this = $(this).attr('href');
+        $('.tab_content_details').hide();
+        $($this).fadeIn(1000);
+
+        $('.tab_header_details a').removeClass('active');
         $(this).addClass('active');
     });
 
