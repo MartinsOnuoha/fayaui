@@ -65,11 +65,20 @@
       .see_all_modal {
         width: 85% !important;
       }
+      #addPromptDetails {
+        width: 85% !important;
+        max-height: 90% !important;
+      }
       #removePrompt {
         width: 30% !important;
       }
       #addPrompt {
         width: 30% !important;
+      }
+      .counters {
+        font-size: 70px;
+        text-align: center;
+        margin-top: 10rem !important;
       }
     </style>
   </head>
@@ -251,7 +260,7 @@
                   <td>21</td>
                   <td>22</td>
                   <td><button class="table-btn">Select Spot</button></td>
-                  <td><button class="table-btn modal-trigger" data-target="addPrompt">Add</button></td>
+                  <td><button class="table-btn modal-trigger" data-target="addPromptDetails">Add</button></td>
                 </tr>
 
                 <tr>
@@ -266,7 +275,7 @@
                   <td>21</td>
                   <td>22</td>
                   <td><button class="table-btn">Select Spot</button></td>
-                  <td><button class="table-btn modal-trigger" data-target="addPrompt">Add</button></td>
+                  <td><button class="table-btn modal-trigger" data-target="addPromptDetails">Add</button></td>
                 </tr>
 
                 <tr>
@@ -1105,10 +1114,227 @@
   <!-- ./ Add Modal -->
 
 
+  <!-- Add Details Modal -->
+  <div id="addPromptDetails" class="modal">
+    <div class="modal-content">
+      <h4>Program Details</h4>
+
+      <!-- table -->
+      <table>
+        <thead>
+          <tr>
+            <th>Programs</th>
+            <th>Station</th>
+            <th>Media Type</th>
+            <th>Total Audience</th>
+            <th>Total Spots</th>
+            <th>Ratings</th>
+            <th>Unit Rate</th>
+            <th>Volume Discount</th>
+          </tr>
+        </thead>
+        <!-- table data -->
+
+        <tr>
+          <td>Laugh Styles</td>
+          <td>NTA2</td>
+          <td>TV</td>
+          <td>24040</td>
+          <td>19</td>
+          <td>80</td>
+          <td>
+            <input type="text" class="unit-input">
+          </td>
+          <td>20%</td>
+        </tr>
+
+      </table>
+      <!-- / table -->
+      <p class="mt4 text-muted">Select Program Spot you would like</p>
+
+      <section class="mt4">
+        <div class="row">
+          <div class="col m8 s12">
+            <div class="flat_frame client_dets mb4">
+              <!-- filter -->
+              <div class="filters border_bottom clearfix">
+                <div class="column col_8 p-t">
+                  <button class="table-btn">15 Sec</button>
+                  <button class="table-btn">30 Sec</button>
+                  <button class="table-btn">45 Sec</button>
+                </div>
+
+                <div class="column col_4">
+                  <!-- table search -->
+                  <div class="col_12 column">
+                    <button class="table-btn right">Auto Fill</button>
+                  </div>
+                </div>
+              </div>
+              <!-- / filter -->
+
+              <!-- campaigns table -->
+              <table>
+                <thead>
+                  <tr>
+                    <th style="width: 100px">Month</th>
+                    <th>Week 1</th>
+                    <th>Week 2</th>
+                    <th>Week 3</th>
+                    <th>Week 4</th>
+                  </tr>
+                </thead>
+                <!-- table data -->
+
+                <tr>
+                  <td>June</td>
+                  <td>
+                    <select name="" id="" class="week-select">
+                      <option value="">2</option>
+                      <option value="">4</option>
+                      <option value="">6</option>
+                      <option value="">8</option>
+                      <option value="">10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="" id="" class="week-select">
+                      <option value="">2</option>
+                      <option value="">4</option>
+                      <option value="">6</option>
+                      <option value="">8</option>
+                      <option value="">10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="" id="" class="week-select">
+                      <option value="">2</option>
+                      <option value="">4</option>
+                      <option value="">6</option>
+                      <option value="">8</option>
+                      <option value="">10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="" id="" class="week-select">
+                      <option value="">2</option>
+                      <option value="">4</option>
+                      <option value="">6</option>
+                      <option value="">8</option>
+                      <option value="">10</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>July</td>
+                  <td>
+                    <select name="" id="" class="week-select">
+                      <option value="">2</option>
+                      <option value="">4</option>
+                      <option value="">6</option>
+                      <option value="">8</option>
+                      <option value="">10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="" id="" class="week-select">
+                      <option value="">2</option>
+                      <option value="">4</option>
+                      <option value="">6</option>
+                      <option value="">8</option>
+                      <option value="">10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="" id="" class="week-select">
+                      <option value="">2</option>
+                      <option value="">4</option>
+                      <option value="">6</option>
+                      <option value="">8</option>
+                      <option value="">10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="" id="" class="week-select">
+                      <option value="">2</option>
+                      <option value="">4</option>
+                      <option value="">6</option>
+                      <option value="">8</option>
+                      <option value="">10</option>
+                    </select>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td>August</td>
+                  <td>
+                    <select name="" id="" class="week-select">
+                      <option value="">2</option>
+                      <option value="">4</option>
+                      <option value="">6</option>
+                      <option value="">8</option>
+                      <option value="">10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="" id="" class="week-select">
+                      <option value="">2</option>
+                      <option value="">4</option>
+                      <option value="">6</option>
+                      <option value="">8</option>
+                      <option value="">10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="" id="" class="week-select">
+                      <option value="">2</option>
+                      <option value="">4</option>
+                      <option value="">6</option>
+                      <option value="">8</option>
+                      <option value="">10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="" id="" class="week-select">
+                      <option value="">2</option>
+                      <option value="">4</option>
+                      <option value="">6</option>
+                      <option value="">8</option>
+                      <option value="">10</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+              <!-- end table -->
+            </div>
+            <!-- / Tv Frame -->
+          </div>
+          <div class="col m4 s12">
+            <h1 class="counters mt4"><span id="small-no">45</span>/<span class="text-muted">219</span></h1>
+          </div>
+        </div>
+      </section>
+
+      <section style="padding: 20px">
+        <div id="chart"></div>
+      </section>
+    </div>
+    <div class="modal-footer">
+      <div class="mb4 align_right pt">
+        <a class="modal-trigger btn uppercased" href="#addPrompt">
+          Add Program
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- / Add Details Modal -->
+
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/apex-chart.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.4/nouislider.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.1.0/wNumb.min.js"></script>
   <!-- <script type="text/javascript" src="js/modal.js"></script> -->
   <script type="text/javascript" src="js/script.js"></script>
   <script>
@@ -1195,6 +1421,32 @@
           </div>
       `)
     }
+    // chart
+    var options = {
+      chart: {
+        type: 'line',
+        height: 400,
+        width: '80%',
+      },
+      series: [{
+        name: 'sales',
+        data: [30,40,35,50,49,60,70,91,125]
+      }],
+      xaxis: {
+        categories: [2001,2002,2003,2004,2005,2006,2007, 2008,2009]
+      }
+    }
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+
+    // counter
+    $('.week-select').on('change', function () {
+      var counterNo = $('#small-no').html();
+      var topUp = Number(counterNo) + 10;
+
+      $('#small-no').text( topUp );
+      console.log(topUp);
+    });
   </script>
   </body>
 
