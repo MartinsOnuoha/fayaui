@@ -65,6 +65,12 @@
       .see_all_modal {
         width: 85% !important;
       }
+      #removePrompt {
+        width: 30% !important;
+      }
+      #addPrompt {
+        width: 30% !important;
+      }
     </style>
   </head>
 
@@ -245,7 +251,7 @@
                   <td>21</td>
                   <td>22</td>
                   <td><button class="table-btn">Select Spot</button></td>
-                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn modal-trigger" data-target="addPrompt">Add</button></td>
                 </tr>
 
                 <tr>
@@ -260,7 +266,7 @@
                   <td>21</td>
                   <td>22</td>
                   <td><button class="table-btn">Select Spot</button></td>
-                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn modal-trigger" data-target="addPrompt">Add</button></td>
                 </tr>
 
                 <tr>
@@ -370,7 +376,7 @@
                   <td>21</td>
                   <td>22</td>
                   <td><button class="table-btn">Select Spot</button></td>
-                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn modal-trigger" data-target="addPrompt">Add</button></td>
                 </tr>
 
                 <tr>
@@ -385,7 +391,7 @@
                   <td>21</td>
                   <td>22</td>
                   <td><button class="table-btn">Select Spot</button></td>
-                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn modal-trigger" data-target="addPrompt">Add</button></td>
                 </tr>
 
                 <tr>
@@ -400,7 +406,7 @@
                   <td>21</td>
                   <td>22</td>
                   <td><button class="table-btn">Select Spot</button></td>
-                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn modal-trigger" data-target="addPrompt">Add</button></td>
                 </tr>
 
                 <tr>
@@ -415,7 +421,7 @@
                   <td>21</td>
                   <td>22</td>
                   <td><button class="table-btn">Select Spot</button></td>
-                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn modal-trigger" data-target="addPrompt">Add</button></td>
                 </tr>
 
               </table>
@@ -459,13 +465,13 @@
       <!-- Tabs 2 Frame -->
       <div class="the_frame client_dets mb4">
 
-        <div class="tab_header m4 border_bottom clearfix">
+        <div class="tab_header_2 m4 border_bottom clearfix">
           <a href="#tv2">TV</a>
           <a href="#radio2">RADIO</a>
         </div>
         <!-- tab-content -->
         <div class="tab_contain">
-          <div class="tab_content" id="tv2">
+          <div class="tab_content_2" id="tv2">
             <!-- TV Frame -->
             <div class="flat_frame client_dets mb4">
               <!-- filter -->
@@ -533,7 +539,9 @@
                   <td>15</td>
                   <td>21</td>
                   <td>22</td>
-                  <td><button class="table-btn red-btn">Remove</button></td>
+                  <td>
+                    <button class="table-btn red-btn modal-trigger" data-target="removePrompt">Remove</button>
+                  </td>
                   <td><button class="table-btn">Details</button></td>
                 </tr>
 
@@ -547,7 +555,9 @@
                   <td>15</td>
                   <td>21</td>
                   <td>22</td>
-                  <td><button class="table-btn red-btn">Remove</button></td>
+                  <td>
+                    <button class="table-btn red-btn modal-trigger" data-target="removePrompt">Remove</button>
+                  </td>
                   <td><button class="table-btn">Details</button></td>
                 </tr>
 
@@ -560,7 +570,7 @@
           <!-- / tab-content -->
 
           <!-- tab-content -->
-          <div class="tab_content" id="radio2">
+          <div class="tab_content_2" id="radio2">
             <!-- Radio Frame -->
             <div class="flat_frame client_dets mb4">
               <!-- filter -->
@@ -670,7 +680,7 @@
   </div>
 
 
- <!-- Modal  -->
+  <!-- Modal  -->
   <div id="see_all" class="modal see_all_modal">
     <div class="modal-content">
 
@@ -754,8 +764,8 @@
                   <td>15</td>
                   <td>21</td>
                   <td>22</td>
-                  <td><button class="table-btn">Select Spot</button></td>
                   <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
                 </tr>
                 <tr>
                   <td>Laugh Styles</td>
@@ -768,8 +778,8 @@
                   <td>15</td>
                   <td>21</td>
                   <td>22</td>
-                  <td><button class="table-btn">Select Spot</button></td>
                   <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
                 </tr>
                 <tr>
                   <td>Laugh Styles</td>
@@ -782,8 +792,8 @@
                   <td>15</td>
                   <td>21</td>
                   <td>22</td>
-                  <td><button class="table-btn">Select Spot</button></td>
                   <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
                 </tr>
                 <tr>
                   <td>Laugh Styles</td>
@@ -796,8 +806,22 @@
                   <td>15</td>
                   <td>21</td>
                   <td>22</td>
-                  <td><button class="table-btn">Select Spot</button></td>
                   <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
+                </tr>
+                <tr>
+                  <td>Laugh Styles</td>
+                  <td>NTA2</td>
+                  <td>Mon Wed Fri</td>
+                  <td>24040</td>
+                  <td>60</td>
+                  <td>80</td>
+                  <td>20000</td>
+                  <td>15</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
                 </tr>
                 <tr>
                   <td>Network News</td>
@@ -810,8 +834,8 @@
                   <td>15</td>
                   <td>21</td>
                   <td>22</td>
-                  <td><button class="table-btn">Select Spot</button></td>
                   <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
                 </tr>
 
                 <tr>
@@ -827,8 +851,8 @@
                   <td>15</td>
                   <td>21</td>
                   <td>22</td>
-                  <td><button class="table-btn" disabled>Select Spot</button></td>
-                  <td><button class="table-btn" disabled>Add</button></td>
+                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
                 </tr>
 
                 <tr>
@@ -844,8 +868,8 @@
                   <td>15</td>
                   <td>21</td>
                   <td>22</td>
-                  <td><button class="table-btn" disabled>Select Spot</button></td>
-                  <td><button class="table-btn" disabled>Add</button></td>
+                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
                 </tr>
 
               </table>
@@ -891,25 +915,27 @@
               </div>
               <!-- / filter -->
 
-              <!-- campaigns table -->
+              <!-- table start -->
               <table>
                 <thead>
                   <tr>
                     <th colspan="3"></th>
+                    <th colspan="1"></th>
                     <th colspan="3"></th>
-                    <th colspan="3" id="available-spot">Selected Spots</th>
+                    <th colspan="3" id="available-spot">Available Spots</th>
                     <th colspan="2"></th>
                   </tr>
                   <tr>
                     <th>Programs</th>
-                    <th>Stations</th>
+                    <th>Station</th>
                     <th>Days of the Week</th>
+                    <th>Available Spots</th>
+                    <th>Total Spots</th>
                     <th>Ratings</th>
                     <th>Unit Rate</th>
-                    <th># of spots</th>
-                    <th style="border-left: 1px solid #ccc">15sec</th>
+                    <th style="border-left: 1px solid #ccc">5sec</th>
+                    <th>15sec</th>
                     <th>30sec</th>
-                    <th>45sec</th>
                     <th colspan="2"></th>
                   </tr>
                 </thead>
@@ -919,32 +945,123 @@
                   <td>Laugh Styles</td>
                   <td>NTA2</td>
                   <td>Mon Wed Fri</td>
+                  <td>24040</td>
+                  <td>60</td>
                   <td>80</td>
                   <td>20000</td>
-                  <td>20</td>
                   <td>15</td>
                   <td>21</td>
                   <td>22</td>
-                  <td><button class="table-btn red-btn">Remove</button></td>
-                  <td><button class="table-btn">Details</button></td>
+                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
                 </tr>
-
+                <tr>
+                  <td>Laugh Styles</td>
+                  <td>NTA2</td>
+                  <td>Mon Wed Fri</td>
+                  <td>24040</td>
+                  <td>60</td>
+                  <td>80</td>
+                  <td>20000</td>
+                  <td>15</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
+                </tr>
+                <tr>
+                  <td>Laugh Styles</td>
+                  <td>NTA2</td>
+                  <td>Mon Wed Fri</td>
+                  <td>24040</td>
+                  <td>60</td>
+                  <td>80</td>
+                  <td>20000</td>
+                  <td>15</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
+                </tr>
+                <tr>
+                  <td>Laugh Styles</td>
+                  <td>NTA2</td>
+                  <td>Mon Wed Fri</td>
+                  <td>24040</td>
+                  <td>60</td>
+                  <td>80</td>
+                  <td>20000</td>
+                  <td>15</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
+                </tr>
+                <tr>
+                  <td>Laugh Styles</td>
+                  <td>NTA2</td>
+                  <td>Mon Wed Fri</td>
+                  <td>24040</td>
+                  <td>60</td>
+                  <td>80</td>
+                  <td>20000</td>
+                  <td>15</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
+                </tr>
                 <tr>
                   <td>Network News</td>
                   <td>AIT</td>
                   <td>Mon Wed Fri</td>
+                  <td>15000</td>
+                  <td>64</td>
                   <td>80</td>
                   <td>20000</td>
-                  <td>1</td>
                   <td>15</td>
                   <td>21</td>
                   <td>22</td>
-                  <td><button class="table-btn red-btn">Remove</button></td>
-                  <td><button class="table-btn">Details</button></td>
+                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
+                </tr>
+
+                <tr>
+                  <td>Network News</td>
+                  <td>ONTV</td>
+                  <td>Mon Wed Fri</td>
+                  <td>15000</td>
+                  <td>64</td>
+                  <td>80</td>
+                  <td>
+                    <input type="text" class="unit-input">
+                  </td>
+                  <td>15</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
+                </tr>
+
+                <tr>
+                  <td>Spot News</td>
+                  <td>Channels TV</td>
+                  <td>Mon Wed Fri</td>
+                  <td>350</td>
+                  <td>60</td>
+                  <td>80</td>
+                  <td>
+                    <input type="text" class="unit-input">
+                  </td>
+                  <td>15</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td><button class="table-btn">Add</button></td>
+                  <td><button class="table-btn">Select Spot</button></td>
                 </tr>
 
               </table>
-              <!-- end table -->
+              <!-- end table --> 
             </div>
             <!-- / Radio Frame -->
 
@@ -959,99 +1076,126 @@
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
   </div>
-  <!-- . modal -->
+  <!-- ./ modal -->
 
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.4/nouislider.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.1.0/wNumb.min.js"></script>
-    <!-- <script type="text/javascript" src="js/modal.js"></script> -->
-    <script type="text/javascript" src="js/script.js"></script>
-    <script>
+  <!-- Remove Modal -->
+  <div id="removePrompt" class="modal">
+    <div class="modal-content">
+      <h4>Remove Station?</h4>
+      <p>Sure to remove this station from your selection?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat left">No</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Yes</a>
+    </div>
+  </div>
+  <!-- ./ Remove Modal -->
 
-      // date picker
-      document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.datepicker');
-        var instances = M.Datepicker.init(elems);
-      });
-      // select dropdown
-      document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('select');
-        var instances = M.FormSelect.init(elems);
-      });
-      // modal
-      document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.modal');
-        var instances = M.Modal.init(elems);
-      });
-      // add range
-      function addRange() {
-        console.log('adding range..');
-        $("#range-collection").append(`
-          <li class="collection-item">
-            <form action="#">
-              <p class="range-field">
-                <input type="range" id="test5" min="0" max="100" />
-              </p>
-            </form>
-          </li>
-        `);
+  <!-- Add Modal -->
+  <div id="addPrompt" class="modal">
+    <div class="modal-content">
+      <h4>Add Station</h4>
+      <p>Sure to add this station to your selection?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat left">No</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Yes</a>
+    </div>
+  </div>
+  <!-- ./ Add Modal -->
+
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.4/nouislider.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.1.0/wNumb.min.js"></script>
+  <!-- <script type="text/javascript" src="js/modal.js"></script> -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script>
+
+    // date picker
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.datepicker');
+      var instances = M.Datepicker.init(elems);
+    });
+    // select dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems);
+    });
+    // modal
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+    });
+    // add range
+    function addRange() {
+      console.log('adding range..');
+      $("#range-collection").append(`
+        <li class="collection-item">
+          <form action="#">
+            <p class="range-field">
+              <input type="range" id="test5" min="0" max="100" />
+            </p>
+          </form>
+        </li>
+      `);
+    }
+    var radioBoxDisplay = false;
+    var tvBoxDisplay = false;
+    // show Tv box
+    function showTvBox() {
+      if (tvBoxDisplay) {
+        tvBoxDisplay = false;
+        $('.tv-box').hide();
+        $('.tv-box').css('display', 'none');
       }
-      var radioBoxDisplay = false;
-      var tvBoxDisplay = false;
-      // show Tv box
-      function showTvBox() {
-        if (tvBoxDisplay) {
-          tvBoxDisplay = false;
-          $('.tv-box').hide();
-          $('.tv-box').css('display', 'none');
-        }
-        if (!tvBoxDisplay) {
-          $('.tv-box').show();
-          $('.tv-box').css('display', 'block');
-          tvBoxDisplay = true;
-        }
+      if (!tvBoxDisplay) {
+        $('.tv-box').show();
+        $('.tv-box').css('display', 'block');
+        tvBoxDisplay = true;
       }
-      // show Radio box
-      function showRadioBox() {
-        $('.radio-box').show();
-      }
-      // add new station
-      function addStation() {
-        // BUG: select not working 
-        $('#add-station-cont').append(`
-            <div class="row">
-              <div class="input-field col s12 m3 mt4">
-                <input type="text" id="autocomplete-input" class="autocomplete flat-input">
-                <label for="autocomplete-input">Station Name</label>
-              </div>
-              <div class="col m3 s12">
-                <label>Media Type</label>
-                <div class="select_wrap">
-                  <select>
-                    <option>TV</option>
-                    <option>Radio</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col m3 s12">
-                <label>Region</label>
-                <div class="select_wrap">
-                  <select>
-                    <option>NW</option>
-                    <option>NE</option>
-                    <option>SE</option>
-                    <option>SS</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col m3 s12 mt2">
-                <button class="table-btn right">Add Station</button>
+    }
+    // show Radio box
+    function showRadioBox() {
+      $('.radio-box').show();
+    }
+    // add new station
+    function addStation() {
+      // BUG: select not working 
+      $('#add-station-cont').append(`
+          <div class="row">
+            <div class="input-field col s12 m3 mt4">
+              <input type="text" id="autocomplete-input" class="autocomplete flat-input">
+              <label for="autocomplete-input">Station Name</label>
+            </div>
+            <div class="col m3 s12">
+              <label>Media Type</label>
+              <div class="select_wrap">
+                <select>
+                  <option>TV</option>
+                  <option>Radio</option>
+                </select>
               </div>
             </div>
-        `)
-      }
-    </script>
+            <div class="col m3 s12">
+              <label>Region</label>
+              <div class="select_wrap">
+                <select>
+                  <option>NW</option>
+                  <option>NE</option>
+                  <option>SE</option>
+                  <option>SS</option>
+                </select>
+              </div>
+            </div>
+            <div class="col m3 s12 mt2">
+              <button class="table-btn right">Add Station</button>
+            </div>
+          </div>
+      `)
+    }
+  </script>
   </body>
 
 </html>
